@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farah Islam - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* GENERAL STYLES */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: #000;
+      color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      position: sticky;
+      top: 0;
+      background: #000;
+      z-index: 1000;
+    }
+
+    header h2 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      font-weight: bold;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #e63946;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 120px 20px;
+      text-align: left;
+      flex-wrap: wrap;
+    }
+
+    .hero-left {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-left h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #e63946;
+    }
+
+    .hero-left h2 {
+      font-size: 2.5rem;
+      margin: 5px 0;
+      font-weight: bold;
+    }
+
+    .hero-left p {
+      font-size: 1.2rem;
+      color: #bbb;
+      margin: 10px 0 20px;
+    }
+
+    .hero-right {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .hero-right img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      background: #e63946;
+      color: #fff;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+
+    .muted {
+      color: #bbb;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    /* CARDS */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      padding: 25px;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      color: #bbb;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-left, .hero-right {
+        min-width: 100%;
+      }
+      .hero-left h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2>Farah Islam</h2>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <h1>Hey there</h1>
+      <h2>I’m Farah Islam</h2>
+      <p>Sales Executive | UI/UX Enthusiast | E-Commerce Expert | Video Editor | Web Developer</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="WhatsApp Image 2025-08-23 at 2.58.07 AM-Photoroom.png" alt="Farah Islam">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="muted">
+      I am Farah Islam, a Computer Science student and Sales Executive at BeForward Japan. I am passionate about UI/UX design and e-commerce, with experience in video editing and web development. I strive to create innovative and efficient solutions through my work.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="row">
+      <div class="card">
+        <h3>Sales - BeForward Japan</h3>
+        <p>I specialize in selling cars and managing client relations at BeForward Japan.</p>
+      </div>
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>Passionate about creating sleek and user-friendly interfaces for web and mobile apps.</p>
+      </div>
+      <div class="card">
+        <h3>E-Commerce</h3>
+        <p>Expertise in Shopify, Daraz, and managing online stores effectively.</p>
+      </div>
+      <div class="card">
+        <h3>Web Development</h3>
+        <p>Skilled in building responsive websites and web apps using modern technologies.</p>
+      </div>
+      <div class="card">
+        <h3>Video Editing</h3>
+        <p>Experience in editing creative videos for projects, social media, and marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="row">
+      <div class="card">
+        <h3>Shopify Store</h3>
+        <p>Developed and managed an e-commerce store on Shopify.</p>
+      </div>
+      <div class="card">
+        <h3>Daraz Store</h3>
+        <p>Managed product listings and sales on Daraz.</p>
+      </div>
+      <div class="card">
+        <h3>Edvoke</h3>
+        <p>Currently working on Edvoke, an academic management system.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="row">
+      <div class="card">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:farah.islam@example.com">farah.islam@example.com</a></p>
+        <p><i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/farahislam</a></p>
+        <p><i class="fab fa-github"></i> <a href="#">github.com/farahislam</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Farah Islam. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
